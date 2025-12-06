@@ -1,0 +1,6 @@
+
+### **2. Create requirements.txt:**
+```txt
+# Recipe Manager - Basic Version
+# No external dependencies required
+# Python 3.6+
