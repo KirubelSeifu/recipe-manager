@@ -1,59 +1,123 @@
-# Recipe Manager (Basic Version)
+# Recipe Manager CLI (Enhanced)
 
-A simple command-line recipe manager that allows you to:
-- Create recipes with structured ingredients (name, quantity, unit)
-- View all recipes
-- Search recipes by ingredient
-- Save recipes to a JSON file for persistence
+A comprehensive command-line recipe manager with advanced search capabilities. Built with Python for efficient recipe management, organization, and intelligent searching.
 
-## Features
-- **Add Recipe**: Interactive recipe creation with ingredients and instructions
-- **View Recipes**: List all recipes with their ingredient counts
-- **Search by Ingredient**: Find recipes that contain a specific ingredient
-- **Persistent Storage**: Recipes are saved to `recipes.json` and loaded on start
+## ✨ Features
 
-## Installation
-No dependencies required! Just Python 3.6+.
+### 🔍 **Advanced Search System**
+- **Multiple Search Criteria**: Search by ingredient, name, tags, cooking time, difficulty, and ingredient count
+- **Advanced Search**: Combine multiple filters for precise results
+- **Flexible Matching**: Exact or partial matching options
+- **Real-time Filtering**: Interactive search with immediate results
 
-## Usage
-1. Run the program:
-    ```bash
-   python recipe_manager.py
-   
+### 📝 **Enhanced Recipe Structure**
+- **Structured Ingredients**: Name, quantity, unit for precise measurements
+- **Optional Metadata**: Cooking time, difficulty level (Easy/Medium/Hard)
+- **Tag System**: Add descriptive tags for better organization
+- **Step-by-step Instructions**: Detailed cooking directions
 
-2. Choose from the menu:
+### 💾 **Data Management**
+- **JSON Storage**: Human-readable data persistence
+- **Automatic Saving**: Changes saved automatically
+- **Error Handling**: Graceful recovery from file issues
+- **Clean Data Structure**: Consistent, well-organized recipe format
 
-    1: View all recipes
+## 🚀 Quick Start
 
-    2: Add new recipe
+```bash
+# Clone the repository
+git clone https://github.com/KirubelSeifu/recipe-manager.git
+cd recipe-manager
 
-    3: Search recipes by ingredient
+# Run the recipe manager
+python recipe_manager.py
 
-    4: Exit
+📋 Usage
+Main Menu Options:
+1. View All Recipes - Browse your complete collection
+2. Add New Recipe - Interactive recipe creation wizard
+3. Search Recipes - Advanced search with multiple criteria
 
-Example Workflow
-1. Add a recipe with structured ingredients:
-    Recipe: Pancakes
-    Ingredients:
-      - 1.5 cups flour
-      - 2 tbsp sugar
-      - 1 cup milk
-2. Search for recipes containing "milk"
-3. View your recipe collection
-   
-   File Structure
-recipe_manager.py: Main program
+4. Exit - Save and quit
 
-recipes.json: Data file (automatically created)
+Search Features:
+-By Ingredient: Find recipes containing specific ingredients
 
-README.md: This documentation
+-By Name: Search recipe titles
 
-    Future Enhancements
-This is the basic version. Planned features include:
-    Edit/delete recipes
-    Recipe categories/tags
-    Search by multiple criteria
-    Recipe scaling
-    Export/import
+-By Tag: Filter by descriptive tags
 
-Developer: Kirubel Seifu
+-By Cooking Time: Find quick meals or elaborate dishes
+
+-By Difficulty: Easy, Medium, or Hard recipes
+
+-By Ingredient Count: Simple or complex recipes
+
+-Advanced Search: Combine all criteria for precise filtering
+
+🎯 Example Workflow
+# 1. Add a recipe
+> Add New Recipe
+Recipe: Chicken Alfredo
+Ingredients: chicken, pasta, cream, parmesan
+Cooking Time: 30 minutes
+Difficulty: Medium
+Tags: italian, dinner, pasta
+
+# 2. Search for recipes
+> Search Recipes
+> Advanced Search
+- Name contains: "chicken"
+- Max cooking time: 30
+- Difficulty: Medium
+
+# 3. View results
+Found 3 recipes matching all criteria
+
+📁 Project Structure
+recipe-manager/
+├── recipe_manager.py    # Main application (enhanced version)
+├── recipes.json         # Recipe database (auto-generated)
+├── README.md           # This documentation
+├── requirements.txt    # Python requirements
+└── .gitignore         # Ignore unnecessary files
+
+🔧 Technical Details
+- Python Version: 3.6+
+
+- Dependencies: None (pure Python)
+
+- Storage: JSON format for easy reading/modification
+
+- Search Algorithm: Linear scan with early termination
+
+🌟 Key Enhancements
+1. Intelligent Search: Multi-criteria filtering system
+
+2. Rich Metadata: Cooking time, difficulty, tags
+
+3. User-Friendly Interface: Visual indicators and clear menus
+
+4.Interactive Results: View recipes directly from search results
+
+Data Integrity: Consistent structure and validation
+
+📈 Future Roadmap
+Recipe editing and deletion
+
+Batch operations (add tags to multiple recipes)
+
+Recipe scaling (adjust portions)
+
+Export to PDF/CSV
+
+Nutritional information tracking
+
+Meal planning features
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Tags: python recipe-manager cli search cooking productivity data-management
+
+Created by: Kirubel Seifu
